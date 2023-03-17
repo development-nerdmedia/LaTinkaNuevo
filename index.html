@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style-wordpress.css">
+    <meta property="og:title" content="La tinka " />
+    <meta property="og:description" content="Miles de motivos para alquilarnos" />
+    <meta property="og:image" content="https://nerd.pe/img/metaimagen_latinka.jpg" />
+    <link  rel="icon"   href="img/favicon.png" type="image/png" />
+    <title>La Tinka</title>
+</head>
+<body>
+    <header>
+        <div class="container" style="background: url(https://loading.io/asset/593700);">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#tiendas">
+                                <span class="text">
+                                    <span class="popUpWord">Tiendas</span>
+                                    <span class="outPop">Tiendas</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#beneficios">
+                                <span class="text">
+                                    <span class="popUpWord">Beneficios</span>
+                                    <span class="outPop">Beneficios</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="#testimonios">
+                            <span class="text">
+                                <span class="popUpWord">Testimonios</span>
+                                <span class="outPop">Testimonios</span>
+                            </span></a></li>
+                        <li><a href="#preguntas"><span class="text">
+                            <span class="popUpWord">Preguntas frecuentes</span>
+                            <span class="outPop">Preguntas frecuentes</span>
+                        </span></a></li>
+                        <li class="contacto"><a href="#home"><button>Contáctanos</button></a></li>
+                        <li class="btmmenumovil"><img src="img/menumovil.svg" alt=""></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="pagethanksPreguntas pagethanks" id="pagethanksPreguntas">
+            <div class="container">
+                <div class="content">
+                    <h2>¡MUCHAS GRACIAS!</h2>
+                    <p>Su pregunta fue registrada.</p>
+                    <button href="#" class="btn">Ir al inicio</button>
+                </div>
+            </div>
+        </section>
+        <section class="pagethanksAprobada thanks pagethanks" id="pagethanksAprobada">
+            <div class="container">
+                <div class="content">
+                    <h2>¡MUCHAS GRACIAS!</h2>
+                    <p>Tus datos se han enviado exitosamente.<br> Nos estaremos comunicando contigo máximo en 7 días.</p>
+                    <button href="#" class="btn">Ir al inicio</button>
+                </div>
+            </div>
+        </section>
+        <section class="pagethanksDesaprobada thanks pagethanks" id="pagethanksDesaprobada">
+            <div class="container">
+                <div class="content">
+                    <h2>¡MUCHAS GRACIAS!</h2>
+                    <p>Su local  no cumple con los requisitos del distrito y/o metraje que buscamos. Estaremos atentos a una nueva propuesta.</p>
+                    <button href="#" class="btn">Ir al inicio</button>
+                </div>
+            </div>
+        </section>
+        <section class="menupage">
+            <div class="container">
+                <div class="top">
+                    <img src="img/close2.svg" alt="close">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="home">
+            <canvas id="my-canvas"></canvas>
+            <div class="container">
+                <div class="content">
+                    <div class="part1">
+                        <div class="img">
+                            <img src="img/mujer3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <img src="img/title.png" alt="">
+                        <div class="contenido" id="home" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                            <h1>Alquilamos tu local comercial</h1>
+                            <p>Completa el formulario y nos comunicaremos  en breve. </p>                            
+                            <form action="" method="" id="form">
+                                <fieldset>
+                                    <div class="form-group" >
+                                        <span>
+                                            <input class="form-input" validate="0" type="text" required="true" name="name" id="name" placeholder="Nombre y apellido:">
+                                        </span>
+                                    </div>
+                                    <div class="form-group-col" >
+                                        <div class="form-group" >
+                                            <span>
+                                                <input class="form-input" validate="0" type="number" required="true" name="name" id="tel" placeholder="Teléfono:">
+                                            </span>
+                                        </div>
+                                        <div class="form-group" >
+                                            <span>
+                                                <input class="form-input" validate="0" type="email" required="true" name="name" id="email" placeholder="Correo electrónico:">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-col">
+                                        <div class="form-group select" >
+                                            <span>
+                                                <select validate="0" name="provincia" id="provincia" class="formSelect">
+                                                    <option value="">Provincia:</option>
+                                                    <option value="Lima">Lima</option>
+                                                    <option value="Junin">Junin</option>
+                                                    <option value="Tingo María">Tingo María</option>
+                                                    <option value="Ayacucho">Ayacucho</option>
+                                                    <option value="Huaral">Huaral</option>
+                                                    <option value="Barranca">Barranca</option>
+                                                    <option value="Cañete">Cañete</option>
+                                                    <option value="Chincha">Chincha</option>
+                                                    <option value="Huánuco">Huánuco</option>
+                                                    <option value="Huaura">Huaura</option>
+                                                    <option value="Huancayo">Huancayo</option>
+                                                    <option value="Nazca">Nazca</option>
+                                                    <option value="Selva Central">Selva Central</option>
+                                                    <option value="Chanchamayo">Chanchamayo</option>
+                                                    <option value="Cusco">Cusco</option>
+                                                    <option value="Iquitos">Iquitos</option>
+                                                    <option value="Puno">Puno</option>
+                                                    <option value="San Martin">San Martin</option>
+                                                    <option value="Pucallpa">Pucallpa</option>
+                                                    <option value="Moyobamba">Moyobamba</option>
+                                                    <option value="Chimbote">Chimbote</option>
+                                                    <option value="Huaraz">Huaraz</option>
+                                                    <option value="Piura">Piura</option>
+                                                    <option value="Tumbes">Tumbes</option>
+                                                    <option value="Sullana">Sullana</option>
+                                                    <option value="Cajamarca">Cajamarca</option>
+                                                    <option value="Chachapoyas">Chachapoyas</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group select" >
+                                            <span>
+                                                <select validate="0" name="distrito" id="distrito" class="formSelect">
+                                                    <option value="">Distrito:</option>
+                                                    <option value="Bellavista">Bellavista</option>
+                                                    <option value="Callao">Callao</option>
+                                                    <option value="Jesus Maria">Jesus Maria</option>
+                                                    <option value="La Perl">La Perla</option>
+                                                    <option value="Lima">Lima</option>
+                                                    <option value="Magdalena del Mar">Magdalena del Mar</option>
+                                                    <option value="Miraflores">Miraflores</option>
+                                                    <option value="Pueblo Libre">Pueblo Libre</option>
+                                                    <option value="San Isidro">San Isidro</option>
+                                                    <option value="San Miguel">San Miguel</option>
+                                                    <option value="Breña">Breña</option>
+                                                    <option value="Independencia">Independencia</option>
+                                                    <option value="La Victoria">La Victoria</option>
+                                                    <option value="Rimac">Rimac</option>
+                                                    <option value="San Borja">San Borja</option>
+                                                    <option value="SMP">SMP</option>
+                                                    <option value="SJM">SJM</option>
+                                                    <option value="Villa Maria de Triunfo">Villa Maria de Triunfo</option>
+                                                    <option value="Huaycan">Huaycan</option>
+                                                    <option value="Santa Anita">Santa Anita</option>
+                                                    <option value="Ate">Ate</option>
+                                                    <option value="Surco">Surco</option>
+                                                    <option value="Surquillo">Surquillo</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" >
+                                        <span>
+                                            <input class="form-input" validate="0" type="text" required="true" name="direcion" id="direcion" placeholder="Dirección:">
+                                        </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <span>
+                                            <input class="form-input" validate="0" type="text" required="true" name="referencia" id="referencia" placeholder="Referencia:">
+                                        </span>
+                                    </div>
+                                    <div class="form-group" >
+                                        <span>
+                                            <input class="form-input" validate="0" type="number" required="true" name="area" id="area" placeholder="Área (m2):">
+                                        </span>
+                                    </div>
+                                    <div class="form-group checkbox" >               
+                                        <span>               
+                                            <span class="texto-check-area">Forma de área:</span>                                       
+                                            <input type="radio" required="" validate="0" id="cuadrada" value="cuadrada" name="tipoArea"><label for="cuadrada">Cuadrada</label>
+                                            <input type="radio" required="" validate="0" id="rectangular" value="rectangular" name="tipoArea"><label for="rectangular">Rectangular</label>
+                                        </span>               
+                                    </div>                                    
+                                    <div class="form-group checkbox">    
+                                        <p class="texto-check-ubi">¿Tú local está a 150m2 de colegios o iglesias?</p>           
+                                        <span>                                                      
+                                            <input type="radio" required="" validate="0" id="si" value="si" name="ubicacion"><label for="si">Sí</label>
+                                            <input type="radio" required="" validate="0" id="no" value="no" name="ubicacion"><label for="no">No</label>
+                                        </span>               
+                                    </div>
+                                    <div class="form-group checkbox">    
+                                        <p class="texto-check-zona">¿Tú local se encuentra cerca de zonas comerciales de alto tránsito?</p>           
+                                        <span>                                                      
+                                            <input type="radio" required="" validate="0" id="sid" value="si" name="zona"><label for="sid">Sí</label>
+                                            <input type="radio" required="" validate="0" id="nod" value="no" name="zona"><label for="nod">No</label>
+                                        </span>               
+                                    </div>
+                                    <div class="checkbox-box">        
+                                        <span>
+                                            <input validate="1" checked type="checkbox" required="" id="terminos"> 
+                                        </span>                
+                                        <p>Acepto las <a href="https://docs.google.com/document/d/17GNeLrAtrRMDEDbaOWRqggmg14Oo-wkqN3hgNbCx788/edit" target="_blank">políticas de privacidad</a></p>
+                                    </div> 
+                                    <p class="msm" id="msm" >Verifica si todos tus datos están conforme antes de enviar.</p>
+                                    <div class="enviar">
+                                        <p><input type="submit" value="Enviar"></p>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionSliderTiendas" id="tiendas">
+            <div class="container">
+                <h2>CONOCE NUESTRAS TIENDAS</h2>
+            </div>
+            <div class="swiper sliderTiendas">
+                <div class="swiper-wrapper" id="sliderTiendas">
+                    <div class="swiper-slide itemTienda">
+                        <div class="filtro"></div>
+                        <div class="fondo">
+                            <img src="img/tienda-los-olivos.png" alt="">
+                        </div>
+                        <img src="img/btnPlay.svg" alt="" class="btnPlay">
+                        <div class="text">
+                            <p>Local - Los Olivos</p>
+                        </div>
+                        <div class="url">
+                            <p>https://www.youtube.com/embed/joG7FwasOFk</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itemTienda">
+                        <div class="filtro"></div>
+                        <div class="fondo">
+                            <img src="img/tienda-los-olivos.png" alt="">
+                        </div>
+                        <img src="img/btnPlay.svg" alt="" class="btnPlay">
+                        <div class="text">
+                            <p>Local - Ate</p>
+                        </div>
+                        <div class="url">
+                            <p>https://www.youtube.com/embed/joG7FwasOFk</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itemTienda">
+                        <div class="filtro"></div>
+                        <div class="fondo">
+                            <img src="img/tienda-los-olivos.png" alt="">
+                        </div>
+                        <img src="img/btnPlay.svg" alt="" class="btnPlay">
+                        <div class="text">
+                            <p>Local - Miraflores</p>
+                        </div>
+                        <div class="url">
+                            <p>https://www.youtube.com/embed/joG7FwasOFk</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itemTienda">
+                        <div class="filtro"></div>
+                        <div class="fondo">
+                            <img src="img/tienda-los-olivos.png" alt="">
+                        </div>
+                        <img src="img/btnPlay.svg" alt="" class="btnPlay">
+                        <div class="text">
+                            <p>Local - San Isidro</p>
+                        </div>
+                        <div class="url">
+                            <p>https://www.youtube.com/embed/joG7FwasOFk</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide itemTienda">
+                        <div class="filtro"></div>
+                        <div class="fondo">
+                            <img src="img/tienda-los-olivos.png" alt="">
+                        </div>
+                        <img src="img/btnPlay.svg" alt="" class="btnPlay">
+                        <div class="text">
+                            <p>Local - Lince</p>
+                        </div>
+                        <div class="url">
+                            <p>https://www.youtube.com/embed/joG7FwasOFk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="datos">
+                    <div class="count">
+                        <span class="hover">0</span>
+                        <span>/</span>
+                        <span class="total"></span>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popSlider">
+            <div class="container">
+                <div class="title">
+                    <h2></h2>
+                    <button>X</button>
+                </div>      
+                <div class="video">
+                </div>          
+                <button class="btn prev"><img src="img/flechaAnterior.svg" alt="">Anterior</button>
+                <button class="btn next">Siguiente<img src="img/flechaAnterior.svg" alt=""></button>
+            </div>
+        </section>
+
+        <section class="beneficios" id="beneficios">
+            <div class="container">
+                <div class="content">
+                    <h2 data-aos="fade-up" data-aos-once="true">Beneficios que ofrecemos</h2>
+                    <p data-aos="fade-up" data-aos-once="true">En La Tinka queremos darte la tranquilidad que todo arrendador busca al momento de alquilar su local.</p>
+                    <div class="grid-beneficios">
+                        <div class="item" data-aos="fade-up" data-aos-once="true" data-aos-duration="500">
+                            <img src="img/beneficio1.svg" alt="">
+                            <p>Cobrar no será un dolor de cabeza, realizamos pagos puntuales.</p>
+                        </div>
+                        <div class="item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                            <img src="img/beneficio2.svg" alt="">
+                            <p>Te aseguramos un contrato de alquiler de largo plazo.</p>
+                        </div>
+                        <div class="item" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500">
+                            <img src="img/beneficio3.svg" alt="">
+                            <p>Tu local queda en las mejores manos, te garantizamos su cuidado.</p>
+                        </div>
+                        <div class="item" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
+                            <img src="img/beneficio4.png" alt="">
+                            <p>Estamos respaldados por el Grupo Intercorp, para brindarte la confianza que necesitas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonios" id="testimonios">
+            <div class="container">
+                <div class="content">
+                    <h2 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">Testimonios </h2>
+                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">Conoce a las personas que nos alquilan su local y te recomiendan hacerlo.</p>
+                </div>
+                <div class="card-testimonios">
+                    <div class="img-tienda destok">
+                        <img src="img/tienda-tinka.png" alt="">
+                    </div>
+                    <div class="person-testimonios">                        
+                    <div class="cards">                         
+                            <div class="card" data-aos="fade-right" data-aos-once="true" data-aos-offset="300">
+                                <div class="info">
+                                    <h3>Priscilla Kanashiro</h3>
+                                    <p>Estoy muy agradecida por la confianza que tiene La tinka con nosotros. Todos los colaboradores siempre amables y respetuosos. Espero que sigamos trabajando juntos por muchos años más . 
+                                    </p>                                
+                                </div>
+                                <div class="ubi">
+                                    <p><img src="img/bullet.svg" alt="">Tienda Chancay Calle Lopez</p>
+                                </div>
+                            </div>                          
+                            <div class="card" data-aos="fade-left" data-aos-once="true" data-aos-offset="300">
+                                <div class="info">
+                                    <h3>Walter Sifuentes</h3>
+                                    <p>La Tinka son puntuales arrendatarios en el pago de la renta, no teniendo que preocuparme por mis ingresos mensuales, teniendo 4 años de relación comercial.</p>                                
+                                </div>
+                                <div class="ubi">
+                                    <p><img src="img/bullet.svg" alt="">Tienda Chimbote Jr. Manuel Ruiz</p>
+                                </div>
+                            </div>                     
+                    </div>
+                    <div class="cards">                           
+                            <div class="card" data-aos="fade-right" data-aos-once="true" data-aos-offset="300">
+                                <div class="info">
+                                    <h3>Manuel Terrones</h3>
+                                    <p>Ha sido una buena experiencia de trabajar con una empresa responsable como lo es la Tinka, así mismo con los encargados ya que siempre estuvieron atentos a los requerimientos del arrendador. Muy agradecido por la oportunidad de trabajar con ustedes.</p>                                
+                                </div>
+                                <div class="ubi">
+                                    <p><img src="img/bullet.svg" alt="">Tienda Cajamarca</p>
+                                </div>
+                            </div>                          
+                            <div class="card" data-aos="fade-left" data-aos-once="true" data-aos-offset="300">
+                                <div class="info">
+                                    <h3>Doris Guevara Medina</h3>
+                                    <p>La Tinka es una empresa muy formal y accesible, las negociaciones fueron sencillas y en todo el proceso nos brindaron seguridad y confianza con las negociaciones y los pagos.</p>                                
+                                </div>
+                                <div class="ubi">
+                                    <p><img src="img/bullet.svg" alt="">Tienda Canadá Av. San Luis</p>
+                                </div>
+                            </div>                   
+                    </div>
+                    </div>
+                    <div class="part2">
+                        <div class="img-tienda">                            
+                            <img src="img/tienda-tinka.png" alt="">
+                        </div>
+                    </div>
+                </div>                
+                <div class="btn">
+                    <a href="#home">Contáctanos</a>
+                </div>
+            </div>
+        </section>
+        <section class="preguntas" id="preguntas">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">Preguntas frecuentes</h2>
+                <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">Resuelve todas tus dudas aquí.</p>
+                <div class="faq-content">
+                    <div class="faq-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <div class="faq-collapsible">
+                            <h3>¿Qué tipo de locales buscamos?</h3>
+                            <img src="img/bullet.svg" alt="">
+                        </div>
+                        <div class="faq-answer">
+                            <p>De preferencia entre 30-100 m2 ubicados en calles principales.</p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <div class="faq-collapsible">
+                            <h3>¿Qué monto de renta buscamos?</h3>
+                            <img src="img/bullet.svg" alt="">
+                        </div>
+                        <div class="faq-answer">
+                            <p>Entre S/1,500 y S/5,000</p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <div class="faq-collapsible">
+                            <h3>¿Cuáles son los requisitos?</h3>
+                            <img src="img/bullet.svg" alt="">
+                        </div>
+                        <div class="faq-answer">
+                            <p>Recibos de servicios, RH y PU (documentos de la municipalidad), partida del inmueble, Dnis de los propietarios</p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <div class="faq-collapsible">
+                            <h3>¿Cuánto tiempo dura la contratación?</h3>
+                            <img src="img/bullet.svg" alt="">
+                        </div>
+                        <div class="faq-answer">
+                            <p>Entre 3 y 7 días aproximadamente</p>
+                        </div>
+                    </div>
+                    <div class="faq-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <div class="faq-collapsible">
+                            <h3>¿Se paga impuestos?</h3>
+                            <img src="img/bullet.svg" alt="">
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, el propietario debe pagar Impuesto a la renta si es persona natural o IGV si es persona jurídica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tarjeta-preg">
+            <div class="container">
+                <div class="content">
+                    <div class="part1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <h2>DÉJANOS TU PREGUNTA</h2>
+                    </div>
+                    <div class="part2" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <form action="" method="" id="form-preguntas">
+                            <fieldset>                                
+                                <input type="text" placeholder="Pregunta:" required="true" data-aos-duration="1000">
+                                <div class="enviar">
+                                    <p>
+                                        <input type="submit" value="Enviar">
+                                    </p>
+                                </div>                                
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="part1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <p>¿Tienes dudas? Comunícate con nosotros.</p>
+                    <a href="mailto:contactoinmobiliario@latinka.com.pe" class="hvr-underline-from-left">contactoinmobiliario@latinka.com.pe</a>
+                </div>
+                <div class="part2" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <div class="content2">
+                        <p>Compartir con un amigo:</p>
+                        <div class="redes">
+                            <div>
+                                <a href=""></a>  
+                                <img src="img/fb.svg" alt="">
+                            </div>
+                            <div>
+                                <a href=""></a>    
+                                <img src="img/wsp.svg" alt="">
+                            </div>                                                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>				
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leafo/sticky-kit@v1.1.2/jquery.sticky-kit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>  
+    <script src="js/index.min.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+</html>
